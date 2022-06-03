@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/design.css">
+        <script src="js/sticky.js" defer></script>
+
+    </head>
+
+    <body>
+
+        <nav id="navbar">
+
+            <div id="navCon">
+                <a href="praktikum.html">Praktikum</a>
+                <a>Ausbildung</a>
+                <a>Karriere</a>
+            </div>
+            <div id="navbar-right" class="dropdown">
+                <div class="burger hidden" id="burger" onclick="makeX(), drop()"">
+                    <div class="burger" id="bar1"></div>
+                    <div class="burger" id="bar2"></div>
+                    <div class="burger" id="bar3"></div>    
+                </div>  
+                <div id="ddown" class="dropContent"> <!--Menü-->
+                    <a href="praktikum.html">Praktikum</a>
+                    <a href="#">Ausbildung</a>
+                    <a href="#">Karriere</a>
+                </div>         
+            </div>
+            
+        </nav>
+        <a href="index.html" id="logo"> <img id="logo" src="Imgs/aof.png" width="150px"></a>
+
+        <div class="info">
+
+            <h1>Berichte von Praktikanten über Prakrika</h1>
+            <p>Es wird hier eine Möglichkeit geben Berichte zu sortieren / filtern etc.</p>
+            <button id="btn" onclick="sortData()">Sortieren nach Neueste</button>
+            <button id="btn" onclick="sortDataOld()">Sortieren nach Älteste</button>
+        </div>
+
+        <div class="ber-aktuell">
+
+            <div id="bericht" data-index="1">
+                <div id="ueberschrift">
+                    <h1>Der aktuellste Bericht</h1>
+                    <h2>25.05.2022</h2>
+                </div>
+                <div class="card" data-article="Nmr1">
+                    <p>
+                        Im April 2022 habe ich mich für ein Praktikum bei A&O Fischer im IT Bereich beworben. Zum Glück musste ich nicht lange warten, sondern habe schon am nächsten Tag eine Rückmeldung erhalten, eine Einladung die Firma zu sehen und genauer über das Praktikum zu sprechen. 
+                        <span class="dots">...</span>
+                        <span class="more">
+                            Mein Nervosität verging schnell als ich Andreas, den Leiter der IT Abteilung, getroffen habe. Er hat mich freundlich empfangen, mir gleich das Büro gezeigt und das Du angeboten. Auch über die Geschichte und Gegenwart der Firma habe ich viel erfahren. Es hat mir gut gefallen, dass ich gefragt wurde was ich von einem Praktikum bei A&O Fischer erwarte und Andreas gleich klar gestellt hat, dass er nicht vor hat Praktikant:innen in der Ecke sitzen zu lassen.
+                            Andreas Plan mit den Praktikan:innen eine Website über das Praktikum bei AOF (die Website auf der du gerade wahrscheinlich diesen Bericht liest) zu machen, wurde gleich am Anfang meines Praktikums in die Tat umgesetzt. Gemeinsam mit einem anderen Praktikanten planten wir mögliche Inhalte und Umsetzung der Website. Dabei war Andreas immer an unserer Seite, hat uns jedoch motiviert unsere eigenen Ideen umzusetzen.
+                            Ich hatte vor meinem Praktikum schon einige Erfahrungen im Programmieren, aber wenn ich Unterstützung brauchte war jederzeit ein Ansprechpartner bereit zu helfen. Durch Erklärungen, empfohlene Tutorials, aber auch Praktische Erfahrung habe ich hier viel gelernt.
+                            Wir durften unsere Aufgabenaufteilung selbst mitgestalten und immer Themen einbringen über die wir mehr lernen wollen. Es wurde auch immer darauf geachtet die Menge der Aufgaben individuell einzuteilen, damit niemand über- oder unterfordert wird.
+                            Das Arbeitsumfeld ist sehr offen und es herrscht ein nettes miteinander. Wasser wird einem bereitgestellt und der Kaffee aus der Kaffeemaschine ist sehr gut. Außerdem gibt es jeden Montag frisches Obst bei dem man sich bedienen darf.
+                            Insgesamt hat mir das Praktikum sehr weitergeholfen mich beruflich zu orientieren und einige erste Erfahrungen im Bereich Anwendungsentwicklung zu sammeln.
+                        </span>
+                    </p>
+                    <button class="btnSmall" onclick="readMore('Nmr1')">Read more</button>
+                </div>
+            </div>
+
+            <div id="bericht" data-index="4">
+                <div id="ueberschrift">
+                    <h1> Bericht</h1>
+                    <h2>01.03.2022</h2>
+                </div>
+                <div class="card" data-article="Nmr2">
+                    <p>
+                        Im April 2022 habe ich mich für ein Praktikum bei A&O Fischer im IT Bereich beworben. Zum Glück musste ich nicht lange warten, sondern habe schon am nächsten Tag eine Rückmeldung erhalten, eine Einladung die Firma zu sehen und genauer über das Praktikum zu sprechen. 
+                        <span class="dots">...</span>
+                        <span class="more">
+                            Mein Nervosität verging schnell als ich Andreas, den Leiter der IT Abteilung, getroffen habe. Er hat mich freundlich empfangen, mir gleich das Büro gezeigt und das Du angeboten. Auch über die Geschichte und Gegenwart der Firma habe ich viel erfahren. Es hat mir gut gefallen, dass ich gefragt wurde was ich von einem Praktikum bei A&O Fischer erwarte und Andreas gleich klar gestellt hat, dass er nicht vor hat Praktikant:innen in der Ecke sitzen zu lassen.
+                            Andreas Plan mit den Praktikan:innen eine Website über das Praktikum bei AOF (die Website auf der du gerade wahrscheinlich diesen Bericht liest) zu machen, wurde gleich am Anfang meines Praktikums in die Tat umgesetzt. Gemeinsam mit einem anderen Praktikanten planten wir mögliche Inhalte und Umsetzung der Website. Dabei war Andreas immer an unserer Seite, hat uns jedoch motiviert unsere eigenen Ideen umzusetzen.
+                            Ich hatte vor meinem Praktikum schon einige Erfahrungen im Programmieren, aber wenn ich Unterstützung brauchte war jederzeit ein Ansprechpartner bereit zu helfen. Durch Erklärungen, empfohlene Tutorials, aber auch Praktische Erfahrung habe ich hier viel gelernt.
+                            Wir durften unsere Aufgabenaufteilung selbst mitgestalten und immer Themen einbringen über die wir mehr lernen wollen. Es wurde auch immer darauf geachtet die Menge der Aufgaben individuell einzuteilen, damit niemand über- oder unterfordert wird.
+                            Das Arbeitsumfeld ist sehr offen und es herrscht ein nettes miteinander. Wasser wird einem bereitgestellt und der Kaffee aus der Kaffeemaschine ist sehr gut. Außerdem gibt es jeden Montag frisches Obst bei dem man sich bedienen darf.
+                            Insgesamt hat mir das Praktikum sehr weitergeholfen mich beruflich zu orientieren und einige erste Erfahrungen im Bereich Anwendungsentwicklung zu sammeln.
+                        </span>
+                    </p>
+                    <button class="btnSmall" onclick="readMore('Nmr2')">Read more</button>
+                </div>
+            </div>
+            
+            <div id="bericht" data-index="3">
+                <div id="ueberschrift">
+                    <h1> Bericht</h1>
+                    <h2>30.03.2022</h2>
+                </div>
+                <div class="card" data-article="Nmr3">
+                    <p>
+                        Im April 2022 habe ich mich für ein Praktikum bei A&O Fischer im IT Bereich beworben. Zum Glück musste ich nicht lange warten, sondern habe schon am nächsten Tag eine Rückmeldung erhalten, eine Einladung die Firma zu sehen und genauer über das Praktikum zu sprechen. 
+                        <span class="dots">...</span>
+                        <span class="more">
+                            Mein Nervosität verging schnell als ich Andreas, den Leiter der IT Abteilung, getroffen habe. Er hat mich freundlich empfangen, mir gleich das Büro gezeigt und das Du angeboten. Auch über die Geschichte und Gegenwart der Firma habe ich viel erfahren. Es hat mir gut gefallen, dass ich gefragt wurde was ich von einem Praktikum bei A&O Fischer erwarte und Andreas gleich klar gestellt hat, dass er nicht vor hat Praktikant:innen in der Ecke sitzen zu lassen.
+                            Andreas Plan mit den Praktikan:innen eine Website über das Praktikum bei AOF (die Website auf der du gerade wahrscheinlich diesen Bericht liest) zu machen, wurde gleich am Anfang meines Praktikums in die Tat umgesetzt. Gemeinsam mit einem anderen Praktikanten planten wir mögliche Inhalte und Umsetzung der Website. Dabei war Andreas immer an unserer Seite, hat uns jedoch motiviert unsere eigenen Ideen umzusetzen.
+                            Ich hatte vor meinem Praktikum schon einige Erfahrungen im Programmieren, aber wenn ich Unterstützung brauchte war jederzeit ein Ansprechpartner bereit zu helfen. Durch Erklärungen, empfohlene Tutorials, aber auch Praktische Erfahrung habe ich hier viel gelernt.
+                            Wir durften unsere Aufgabenaufteilung selbst mitgestalten und immer Themen einbringen über die wir mehr lernen wollen. Es wurde auch immer darauf geachtet die Menge der Aufgaben individuell einzuteilen, damit niemand über- oder unterfordert wird.
+                            Das Arbeitsumfeld ist sehr offen und es herrscht ein nettes miteinander. Wasser wird einem bereitgestellt und der Kaffee aus der Kaffeemaschine ist sehr gut. Außerdem gibt es jeden Montag frisches Obst bei dem man sich bedienen darf.
+                            Insgesamt hat mir das Praktikum sehr weitergeholfen mich beruflich zu orientieren und einige erste Erfahrungen im Bereich Anwendungsentwicklung zu sammeln.
+                        </span>
+                    </p>
+                    <button class="btnSmall" onclick="readMore('Nmr3')">Read more</button>
+                </div>
+            </div>
+            
+            <div id="bericht" data-index="2">
+                <div id="ueberschrift">
+                    <h1> Bericht</h1>
+                    <h2>12.05.2022</h2>
+                </div>
+                <div class="card" data-article="Nmr4">
+                    <p>
+                        Im April 2022 habe ich mich für ein Praktikum bei A&O Fischer im IT Bereich beworben. Zum Glück musste ich nicht lange warten, sondern habe schon am nächsten Tag eine Rückmeldung erhalten, eine Einladung die Firma zu sehen und genauer über das Praktikum zu sprechen. 
+                        <span class="dots">...</span>
+                        <span class="more">
+                            Mein Nervosität verging schnell als ich Andreas, den Leiter der IT Abteilung, getroffen habe. Er hat mich freundlich empfangen, mir gleich das Büro gezeigt und das Du angeboten. Auch über die Geschichte und Gegenwart der Firma habe ich viel erfahren. Es hat mir gut gefallen, dass ich gefragt wurde was ich von einem Praktikum bei A&O Fischer erwarte und Andreas gleich klar gestellt hat, dass er nicht vor hat Praktikant:innen in der Ecke sitzen zu lassen.
+                            Andreas Plan mit den Praktikan:innen eine Website über das Praktikum bei AOF (die Website auf der du gerade wahrscheinlich diesen Bericht liest) zu machen, wurde gleich am Anfang meines Praktikums in die Tat umgesetzt. Gemeinsam mit einem anderen Praktikanten planten wir mögliche Inhalte und Umsetzung der Website. Dabei war Andreas immer an unserer Seite, hat uns jedoch motiviert unsere eigenen Ideen umzusetzen.
+                            Ich hatte vor meinem Praktikum schon einige Erfahrungen im Programmieren, aber wenn ich Unterstützung brauchte war jederzeit ein Ansprechpartner bereit zu helfen. Durch Erklärungen, empfohlene Tutorials, aber auch Praktische Erfahrung habe ich hier viel gelernt.
+                            Wir durften unsere Aufgabenaufteilung selbst mitgestalten und immer Themen einbringen über die wir mehr lernen wollen. Es wurde auch immer darauf geachtet die Menge der Aufgaben individuell einzuteilen, damit niemand über- oder unterfordert wird.
+                            Das Arbeitsumfeld ist sehr offen und es herrscht ein nettes miteinander. Wasser wird einem bereitgestellt und der Kaffee aus der Kaffeemaschine ist sehr gut. Außerdem gibt es jeden Montag frisches Obst bei dem man sich bedienen darf.
+                            Insgesamt hat mir das Praktikum sehr weitergeholfen mich beruflich zu orientieren und einige erste Erfahrungen im Bereich Anwendungsentwicklung zu sammeln.
+                        </span>
+                    </p>
+                    <button class="btnSmall" onclick="readMore('Nmr4')">Read more</button>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            <div>
+                															
+                <p><strong>A&amp;O Fischer GmbH &amp; Co. KG</strong> <br>Maybachstraße 9 <br>21423 Winsen (Luhe)</p>						
+                <p><img src="https://www.aof.de/wp-content/uploads/2021/08/aof-logo-bild.png" id="footlogo" alt="Das Logo der A &amp; O Fischer GmbH &amp; Co.KG als Bild" loading="lazy" width="174" height="172"> 
+                <br> Telefon: +49 (0) 4171 65 59 0 <br>E-Mail: <a href="mailto:info@aof.de">info@aof.de</a></p>						
+                <p><strong>Unsere Online-Dienste:</strong><br><a href="https://www.letterxpress.de" target="_blank" rel="noopener">www.letterxpress.de</a><br><a href="https://www.paperdoo.de" target="_blank" rel="noopener">www.paperdoo.de</a></p>					
+            
+            </div>
+        </footer>
+        

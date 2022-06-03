@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/design.css">
+        <script src="js/sticky.js" defer></script>
+        
+    </head>
+    <body>
+
+        <nav id="navbar">
+
+            <div id="navCon">
+                <a href="praktikum.html">Praktikum</a>
+                <a>Ausbildung</a>
+                <a>Karriere</a>
+            </div>
+            <div id="navbar-right" class="dropdown">
+                <div class="burger hidden" id="burger" onclick="makeX(), drop()"">
+                    <div class="burger" id="bar1"></div>
+                    <div class="burger" id="bar2"></div>
+                    <div class="burger" id="bar3"></div>    
+                </div>  
+                <div id="ddown" class="dropContent"> <!--Menü-->
+                    <a href="praktikum.html">Praktikum</a>
+                    <a href="#">Ausbildung</a>
+                    <a href="#">Karriere</a>
+                </div>        
+            </div>
+            
+        </nav>
+
+       <!-- Logo "auf" Navbar--> 
+        <a href="index.html" id="logo"> <img id="logo" src="Imgs/aof.png" width="150px"></a>
+
+        <!-- Hier könnte aktuelles hin? WICHTIG: Parallax scolling!-->
+        <div class="content">
+            <p>COMING SOON</p>
+            <p id="timer"></p>
+        </div>
+
+        <!--Link zu originaler AOF-Seite-->
+        <div id="toMain">
+            <p>
+                <a title="Hier gehts zur AOF Hauptseite!" href="https://www.aof.de/">
+                    <img src="Imgs/aof-logo.png" height="150px"> 
+                    <br>
+                    AOF was ist das eigentlich?
+                </a>
+            </p>
+        </div>
+
+        <!--mehr Content?-->
+        <div class="content">
+            <p>COMING SOON</p>
+        </div>
+
+        <footer>
+            <div>
+                															
+                <p><strong>A&amp;O Fischer GmbH &amp; Co. KG</strong> <br>Maybachstraße 9 <br>21423 Winsen (Luhe)</p>						
+                <p><img src="https://www.aof.de/wp-content/uploads/2021/08/aof-logo-bild.png" id="footlogo" alt="Das Logo der A &amp; O Fischer GmbH &amp; Co.KG als Bild" loading="lazy" width="174" height="172"> 
+                   <br> Telefon: +49 (0) 4171 65 59 0 <br>E-Mail: <a href="mailto:info@aof.de">info@aof.de</a></p>						
+                <p><strong>Unsere Online-Dienste:</strong><br><a href="https://www.letterxpress.de" target="_blank" rel="noopener">www.letterxpress.de</a><br><a href="https://www.paperdoo.de" target="_blank" rel="noopener">www.paperdoo.de</a></p>					
+            
+            </div>
+        </footer>
+
+    </body>
+</html>

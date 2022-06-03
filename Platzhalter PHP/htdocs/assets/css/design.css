@@ -1,0 +1,429 @@
+/* AOF font von google importiert in 3 weights */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&display=swap');
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+    height: 100%;
+    line-height: 1.8;
+    background: white;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: white; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #e5004f; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #d2004d; 
+  }
+
+#navbar {
+    background: #e5004f;
+    font-size: 1.6em;
+    font-weight: 400;
+    padding: 90px 10px;
+    transition: 0.4s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    border-bottom: #d5698f 2px;
+}
+
+#logo {
+    overflow: visible !important;
+    padding: 0;
+    transition: 0.4s;
+    overflow: hidden;
+    position: fixed;
+    top: 50px;
+    left: 200px;
+    z-index: 99;
+}
+
+#navCon {
+    text-align: center;
+}
+
+#navCon a{
+    color: white;
+    font: inherit;
+    margin: 30px;
+    padding: 0 1em;
+    border-left: white solid 1px;
+    border-right: white solid 1px;
+}
+
+#navCon a:hover {
+    border-bottom: white solid 2px;
+    border-left: none;
+    border-right: none;
+}
+
+#navbar-right {
+    float: right;
+}
+
+.burger div {
+    width: 38px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 220px;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 7px;
+} 
+
+/* .change ist die Klasse für die animation des Burgers */
+.change #bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+    border-radius: 7px;
+}
+
+.change #bar2 {
+    opacity: 0;
+}
+
+.change #bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+    border-radius: 7px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropContent {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 5px 10px 0px #d5698f;
+    border-radius: 3px;
+    z-index: 1;
+    float: right;
+    right:65px;
+}
+
+.dropContent a {
+    color: #e5004f;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    overflow: visible;
+}
+
+.dropContent a:hover {
+    background: #e5004f;
+    color: white;
+}
+
+.show {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Bis hier Navbar fokussiert */
+
+#navbar + .content {
+    padding-top: 160px;
+}
+
+#navbar + .info {
+    padding-top: 160px;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+footer {
+    background: #002041;
+    position: absolute;
+    width: 100%;
+    margin-top: auto;
+    left: 0;
+    overflow: auto;
+    font-family: "Nunito Sans";
+    font-weight: 200;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+footer p {
+    display: inline-block;
+}
+
+footer img {
+    float: center;
+}
+
+#footlogo {
+    box-shadow: rgba(255, 255, 255, 0.39) 0px 1px 1px 0px;
+    padding: 0;
+}
+
+/* responsive Einstellungen bisher nur für mobil */
+@media screen and (max-width: 580px) {
+    body {
+        background-attachment: scroll;
+    }
+
+    #navbar {
+        padding: 20px 10px !important;
+    }
+    #navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    #navbar-right {
+        float: none;
+    }
+    #logo {
+        margin-right: 0;
+        margin-left: 100px;
+        top: 0;
+        width: 120px;
+        height: auto;
+    }
+
+    .burger div {
+        margin: 6px;
+    }
+
+    .dropContent {
+        left: 50%;
+        font-size: .6em;
+    }
+    .content {
+        font-size: 3em;
+    }
+}
+
+
+/* INDEX */
+
+/* background Einstellungen für Parallax*/
+.content {
+    padding: 10%;
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    background: url(../imgs/bg1.1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Nunito Sans";
+    font-weight: 200;
+    height: 100%;
+}
+
+#timer {
+    background:rgba(255, 255, 255, 0.8);
+    color: #e5004f;
+    font-family: inherit;
+    font-weight: inherit;
+    border-radius: 3px;
+}
+
+#toMain {
+    text-align: center;
+    font-weight: 200;
+    font-size: 1.5em;
+    background: white;
+    padding: 2% 20%;
+}
+
+#toMain a {
+    text-decoration: none;
+    color: white;
+}
+
+#toMain a:hover {
+    font-weight: 400;
+}
+
+#toMain a img:hover{
+    box-shadow: 0px 2px 4px 0px #e5004f;
+}
+
+#toMain p {
+    padding: 30px 0px;
+    background: #e5004f;
+    border-radius: 3px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imgs/firmengebaeude.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* PRAKTIKUMS UNTERSEITE */    
+
+
+.info {
+    padding: 15% 10% 5% 15%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imgs/bg1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: "Nunito Sans";
+    font-size: 1.5em;
+    font-weight: 200;
+    text-align: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+h1 {
+    font-family: inherit;
+    font-weight: 200;
+    font-size: 2em;
+}
+
+#bold {
+    font-weight: 400;
+}
+
+#btn {
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: 200;
+    width: 370px;
+    height: 75px;
+    color: white;
+    background: rgba(255, 255, 255, 0.44);
+    padding: 3px 5px;
+    margin: 5px 15px;
+    cursor: pointer;
+    border: white solid 2px;
+}
+
+#btn:hover {
+    background: #e50050;
+    box-shadow: 0px 2px 4px 0px #e5004f;
+}
+
+.container-btns {
+    display: inline-block;
+    align-items: center;
+}
+
+#btn2 {
+    font: inherit;
+    font-weight: 400;
+    width: 370px;
+    height: 75px;
+    color: white;
+    background: #e5004f;
+    padding: 3px 5px;
+    margin: 5px;
+    cursor: pointer;
+    border: white solid 2px;
+}
+
+#btn2:hover {
+    box-shadow: 0px 2px 4px 0px #e5004f;
+    background: #e5005092;
+}
+
+.cntnt-bx {
+    margin: -2% 33% 5% 35%;
+    padding: 6% 3%;
+    text-align: center;
+    font-size: 1.5em;    
+    font-family: "Nunito Sans";
+    font-weight: 200;
+    color: black;
+    background:white;
+    box-shadow: 0px 2px 4px 0px #e5004f;
+    z-index: 2;
+}
+
+.cntnt-bx h2 {
+    font-family: "Nunito Sans";
+    font-weight: 200;
+    text-align: center;
+}
+
+#prakIt {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+    padding: 5% 10% 5% 15%;
+    background-image: url("../imgs/web.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: "Nunito Sans";
+    font-size: 1.5em;
+    font-weight: 400;
+    text-align: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+#prakEc {
+    padding: 5% 10% 5% 15%;
+    background-image: url("../imgs/cyber.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: "Nunito Sans";
+    font-size: 1.5em;
+    font-weight: 400;
+    text-align: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+#prakMa {
+    padding: 5% 10% 5% 15%;
+    background-image: url("../imgs/brief.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: "Nunito Sans";
+    font-size: 1.5em;
+    font-weight: 400;
+    text-align: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+
+/* Erfahrungsberichte */
+
+
+#bericht {
+    overflow-y: scroll;
+    height: 8em;
+    text-align: left;
+    color: #002041;
+}
